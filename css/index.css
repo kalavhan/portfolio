@@ -4,7 +4,23 @@ html {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1500px;
+}
+
+@keyframes socialbuttons-start {
+  0% {
+    font-size: 44px;
+    transform: rotate(20deg);
+  }
+  50%{
+    font-size: 44px;
+    transform: rotate(-20deg);
+  }
+  100%{
+    font-size: 44px;
+    transform: rotate(20deg);
+  }
+
 }
 
 .nav {
@@ -20,25 +36,27 @@ html {
   z-index: 10;
 }
 
-.nav::after {
-  content: url('../images/drawing.svg');
-  position: fixed;
-  right: 0;
-  top: 0;
+.nav .background {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-color: #4646ff;
   z-index: -1;
 }
 
 .nav img {
   height: 60px;
   width: auto;
+  align-self: center;
 }
 
 .nav ul {
   display: flex;
   flex-direction: row;
-  width: 450px;
-  margin-right: 10px;
-  font-size: 25px;
+  width: 430px;
+  margin-right: 20px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0);
   font-weight: 700;
   justify-content: space-between;
   align-self: center;
@@ -54,6 +72,183 @@ html {
 }
 
 .nav ul li a:hover {
-  color: #ffb732;
-  font-size: 22px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.socialbuttons {
+  position: fixed;
+  top: 110px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.socialbuttons > a {
+  text-decoration: none;
+  font-size: 44px;
+  transform: rotate(20deg);
+  animation: socialbuttons-start;
+  animation-duration: 1s;
+  transition-duration: 0.3s;
+  margin-bottom: 25px;
+  width: 38px;
+  height: 38px;
+}
+
+.socialbuttons > a > i{
+  background-color: #fff;
+  border-color: #fff;
+  border-width: 3px;
+  border-style: solid;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 8px;
+  
+}
+
+.socialbuttons > a > span {
+  display: none;
+}
+
+.socialbuttons > a:hover {
+  transform: rotate(0deg);
+  text-rendering: optimizeLegibility;
+}
+
+.socialbuttons > a:hover > span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  width: 60px;
+  padding: 3px;
+  color: white;
+  background-color: #323232;
+  border-color: #000;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 4px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  left: -80px;
+  bottom: 35px;
+}
+
+.socialbuttons > a:hover >span::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 100%; /* To the right of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent black;
+}
+
+.socialbuttons > a:nth-of-type(1) {
+  color: #000;
+}
+
+.socialbuttons > a:nth-of-type(2) {
+  color: #0077b5;
+}
+
+.socialbuttons > a:nth-of-type(3) {
+  color: #2daae4;
+}
+
+.hero-header {
+  width: 100%;
+  height: 500px;
+  background: rgba(222,163,13,1);
+  background: -moz-linear-gradient(-45deg, rgba(222,163,13,1) 0%, rgba(222,163,13,1) 1%, rgba(255,111,0,1) 50%, rgba(40,191,40,1) 51%, rgba(34,153,34,1) 99%, rgba(34,153,34,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(222,163,13,1)), color-stop(1%, rgba(222,163,13,1)), color-stop(50%, rgba(255,111,0,1)), color-stop(51%, rgba(40,191,40,1)), color-stop(99%, rgba(34,153,34,1)), color-stop(100%, rgba(34,153,34,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(222,163,13,1) 0%, rgba(222,163,13,1) 1%, rgba(255,111,0,1) 50%, rgba(40,191,40,1) 51%, rgba(34,153,34,1) 99%, rgba(34,153,34,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(222,163,13,1) 0%, rgba(222,163,13,1) 1%, rgba(255,111,0,1) 50%, rgba(40,191,40,1) 51%, rgba(34,153,34,1) 99%, rgba(34,153,34,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(222,163,13,1) 0%, rgba(222,163,13,1) 1%, rgba(255,111,0,1) 50%, rgba(40,191,40,1) 51%, rgba(34,153,34,1) 99%, rgba(34,153,34,1) 100%);
+  background: linear-gradient(135deg, rgba(222,163,13,1) 0%, rgba(222,163,13,1) 1%, rgba(255,111,0,1) 50%, rgba(40,191,40,1) 51%, rgba(34,153,34,1) 99%, rgba(34,153,34,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dea30d', endColorstr='#229922', GradientType=1 );
+}
+
+.hero-header > .container-img {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  top: 30px;
+  left: 50%;
+  margin-left: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #fff;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.hero-header > .container-img > img {
+  height: 200px;
+  width: auto;
+}
+
+.hero-header > p:nth-of-type(1) {
+  position: relative;
+  width: 460px;
+  text-align: center;
+  left: 50%;
+  margin-left: -230px;
+  top: 45px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+.hero-header > p:nth-of-type(2) {
+  position: relative;
+  width: 460px;
+  text-align: center;
+  left: 50%;
+  margin-left: -230px;
+  top: 58px;
+  color: #f4f4f4;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.hero-header > .seemore {
+  position: relative;
+  font-size: 23px;
+  width: 180px;
+  left: 50%;
+  top: 180px;
+  margin-left: -90px;
+  color: #e5e5e5;
+}
+
+.hero-header > .seemore > span {
+  margin: 0;
+  padding: 0;
+}
+
+.layer1 {
+	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.layer2 {
+	-webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.layer3 {
+	-webkit-box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+}
+
+.layer4 {
+	-webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
 }
