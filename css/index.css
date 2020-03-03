@@ -100,6 +100,7 @@ html {
   right: 15px;
   display: flex;
   flex-direction: column;
+  z-index: 10;
 }
 
 .socialbuttons > a {
@@ -179,6 +180,7 @@ html {
 }
 
 .hero-header {
+  position: relative;
   width: 100%;
   height: 500px;
   background: rgba(222,163,13,1);
@@ -192,56 +194,55 @@ html {
 }
 
 .hero-header > .container-img {
-  position: relative;
-  height: 200px;
-  width: 200px;
-  top: 30px;
-  left: 50%;
-  margin-left: -100px;
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 20px;
+  left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-style: solid;
   border-width: 5px;
   border-color: #fff;
-  border-radius: 100px;
+  border-radius: 75px;
   overflow: hidden;
 }
 
 .hero-header > .container-img > img {
-  height: 200px;
+  height: 150px;
   width: auto;
 }
 
 .hero-header > p:nth-of-type(1) {
-  position: relative;
-  width: 460px;
+  position: absolute;
+  width: 700px;
   text-align: center;
+  top: 30%;
   left: 50%;
-  margin-left: -230px;
-  top: 45px;
+  margin-left: -350px;
   color: #fff;
-  font-size: 30px;
+  font-size: 45px;
   font-weight: 700;
 }
 .hero-header > p:nth-of-type(2) {
   position: relative;
   width: 460px;
   text-align: center;
+  top: 40%;
   left: 50%;
   margin-left: -230px;
-  top: 58px;
   color: #f4f4f4;
   font-size: 32px;
   font-weight: 700;
 }
 
 .hero-header > .seemore {
-  position: relative;
+  position: absolute;
   font-size: 23px;
   width: 180px;
   left: 50%;
-  top: 180px;
+  top: 90%;
   margin-left: -90px;
   color: #e5e5e5;
   display: flex;
@@ -284,6 +285,99 @@ html {
   animation-direction: alternate;
   animation-duration: 1s;
 }
+
+.background-words {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.background-words > span {
+  color: #4e4c4c;
+}
+
+.background-words > span:nth-of-type(1) {
+  position: absolute;
+  font-size: 55px;
+  top: 20px;
+  left: 190px;
+}
+
+.background-words > span:nth-of-type(2) {
+  position: absolute;
+  font-size: 55px;
+  top: 310px;
+  left: -60px;
+  transform: rotate(270deg);
+}
+
+.background-words > span:nth-of-type(3) {
+  position: absolute;
+  font-size: 45px;
+  top: 70px;
+  left: 390px;
+}
+
+.background-words > span:nth-of-type(4) {
+  position: absolute;
+  font-size: 45px;
+  top: 310px;
+  left: 110px;
+}
+
+.background-words > span:nth-of-type(5) {
+  position: absolute;
+  font-size: 25px;
+  top: 290px;
+  left: 110px;
+}
+
+.background-words > span:nth-of-type(6) {
+  position: absolute;
+  font-size: 40px;
+  top: 210px;
+  left: 160px;
+}
+
+.background-words > span:nth-of-type(7) {
+  position: absolute;
+  font-size: 26px;
+  top: 120px;
+  left: 260px;
+}
+
+.background-words > span:nth-of-type(8) {
+  position: absolute;
+  font-size: 60px;
+  top: 380px;
+  left: 110px;
+}
+
+.background-words > span:nth-of-type(9) {
+  position: absolute;
+  font-size: 40px;
+  top: 270px;
+  left: 400px;
+}
+
+.background-words > span:nth-of-type(10) {
+  position: absolute;
+  font-size: 35px;
+  top: 410px;
+  left: 320px;
+  transform: rotate(270deg);
+}
+
+.background-words > span:nth-of-type(11) {
+  position: absolute;
+  font-size: 50px;
+  top: 305px;
+  left: 470px;
+}
+
+
 
 .layer1 {
 	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
