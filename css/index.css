@@ -450,80 +450,78 @@ body{
 }
 
 .skills {
+  position: relative;
   margin-top: 40px;
+  width: 100%;
+  max-width: 1400px;
+  height: 550px;
 }
 
-.lenguages {
+.skills-title {
+  position: absolute;
+  font-size: 80px;
+  top: 110px;
+  left: 60px;
+  margin: 0;
+  padding: 0;
+  transform: rotate(270deg);
+}
+
+.skills-container {
+  margin-right: 15%;
+  margin-left: 15%;
   display: flex;
-  flex-direction: row;
-  padding: 10px;
+  flex-wrap: wrap;
+  font-size: 100px;
+  justify-content: center;
+}
+.skills-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
   align-items: center;
 }
-
-.lenguages-list {
-  width: 34%;
-  height: 40%;
-  margin: 0 7% 0 7%;
-  background-color: blue;
-  padding: 2%;
-  color: #fff;
-  border-radius: 15px;
+.skills-item > span {
   font-size: 20px;
 }
 
-.lenguages-animation {
-  width: 300px;
-  height: 300px;
+.projects {
+  display: grid;
+  width: 76%;
   margin-right: auto;
   margin-left: auto;
-  perspective: 1200px;
+  grid-template-columns: 50% 50%;
 }
 
-.figure-lenguages {
-  width: 300px;
-  height: 300px;
-  position: relative;
-  transform-style: preserve-3d;
+.project-card {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
 }
 
-.figure-lenguages > div {
-  width: inherit;
-  height: inherit;
-  position: absolute;
+.project-card-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.figure-lenguages-front {
-  background-color: blue;
-  transform: translate3d(0, 0, 150px);
+.project-card-data > h2 {
+  font-size: 23px;
+  font-weight: 700;
 }
 
-.figure-lenguages-back {
-  background-color: green;
-  transform: rotateY(180deg) translate3d(0, 0, 150px);
+.project-card-data > h4 {
+  font-size: 16px;
 }
 
-.figure-lenguages-top {
-  background-color: yellow;
-  transform: rotateY(90deg) translate3d(0, 0, 150px)
+.project-card-data > .buttons {
+  align-self: flex-end;
 }
 
-.figure-lenguages-bottom {
-  background-color: purple;
-  transform: rotateY(270deg) translate3d(0, 0, 150px)
+.project-card > .image {
+  width: 100%;
+  height: auto;
 }
-
-.figure-lenguages-left {
-  background-color: orange;
-  transform: rotateX(270deg) translate3d(0, 0, 150px)
-}
-
-.figure-lenguages-right {
-  background-color: black;
-  transform: rotateX(90deg) translate3d(0, 0, 150px)
-}
-
-
-
 
 .layer1 {
 	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);

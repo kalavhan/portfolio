@@ -12,6 +12,7 @@
     <script src="js/index.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
@@ -41,7 +42,7 @@
           </a>
         </div>
     </div>
-    <div class="hero-header layer1">
+    <div class="hero-header layer1" id="home">
       <div class="container-img">
         <img src="images/face.png" alt="face picture of developer">
       </div>
@@ -74,42 +75,81 @@
         <span>Focused</span>
       </div>
     </div>
-    <div class="skills">
-      <div class="lenguages">
-        <div class="lenguages-list">
-          <ul>
-            <li>Ruby</li>
-            <li>PHP</li>
-            <li>JavaScript</li>
-            <li>HTML 5</li>
-            <li>CSS</li>
-            <li>Java</li>
-          </ul>
+    <div class="skills" id="skills">
+      <h2 class="skills-title">Skills</h2>
+      <div class="skills-container">
+        <div class="skills-item">
+          <i class="devicon-javascript-plain colored"></i>
+          <span>Javascript</span>
         </div>
-        <div class="lenguages-animation">
-          <div class="figure-lenguages">
-            <div class="figure-lenguages-front"></div>
-            <div class="figure-lenguages-back"></div>
-            <div class="figure-lenguages-left"></div>
-            <div class="figure-lenguages-right"></div>
-            <div class="figure-lenguages-top"></div>
-            <div class="figure-lenguages-bottom"></div>
+        <div class="skills-item">
+          <i class="devicon-ruby-plain colored"></i>
+          <span>Ruby</span>
+        </div>
+        <div class="skills-item">
+          <i class="devicon-php-plain colored"></i>
+          <span>PHP</span>
+        </div>
+        <div class="skills-item">
+          <i class="devicon-rails-plain colored"></i>
+          <span>Rails</span>
+        </div>
+        <div class="skills-item">
+          <i class="devicon-html5-plain colored"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="skills-item">
+          <i class="devicon-css3-plain colored"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="skills-item">
+          <i class="devicon-sass-original colored"></i>
+          <span>SASS</span>
+        </div>
+        <div class="skills-item">
+          <i class="devicon-bootstrap-plain colored"></i>
+          <span>Bootstrap</span>
+        </div>
+        <div class="skills-item">
+          <i class="devicon-nodejs-plain colored"></i>
+          <span>NodeJS</span>
+        </div>
+        <div class="skills-item">
+          <i class="devicon-mysql-plain colored"></i>
+          <span>MySQL</span>
+        </div>
+        <div class="skills-item">
+          <i class="devicon-postgresql-plain colored"></i>
+          <span>PostgreSQL</span>
+        </div>
+        <div class="skills-item">
+          <i class="devicon-react-original colored"></i>
+          <span>React</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects">
+      <div class="project-card">
+        <img class="image" src="images/fakebook.png" alt="">
+        <div class="project-card-data">
+          <h2 class="title">Facebook clone</h2>
+          <h4 class="description">Facebook clone app build with Rails, SASS. Ruby</h4>
+          <div class="buttons">
+            <a href="https://github.com/kalavhan/facebook-clone/" target="_blank">Github<i class="fab fa-github-square layer2"></i></a>
+            <a href="https://frozen-forest-23599.herokuapp.com/" target="_blank">Live<i class="fas fa-globe"></i></a>
           </div>
         </div>
       </div>
-      <div class="frameworks">
-        <div class="frameworks-list">
-          <li>Ruby On Rails</li>
-          <li>NodeJs</li>
-          <li>Bootstrap</li>
-          <li>Materialize</li>
-        </div>
-        <div class="frameworks-animation">
-          <div class="figure-frameworks">
-            <div class="figure-frameworks-first"></div>
-            <div class="figure-frameworks-second"></div>
-            <div class="figure-frameworks-third"></div>
-            <div class="figure-frameworks-fourth"></div>
+
+      <div class="project-card">
+        <img class="image" src="images/mangatop.png" alt="">
+        <div class="project-card-data">
+          <h2 class="title">Manga top</h2>
+          <h4 class="description">Website to publish articles related to manga build with Rails, SASS. Ruby</h4>
+          <div class="buttons">
+            <a href="https://github.com/kalavhan/manga-top/" target="_blank">Github<i class="fab fa-github-square layer2"></i></a>
+            <a href="https://blooming-crag-23204.herokuapp.com/" target="_blank">Live<i class="fas fa-globe"></i></a>
           </div>
         </div>
       </div>
