@@ -136,8 +136,8 @@
           <h2 class="title">Facebook clone</h2>
           <h4 class="description">Facebook clone app build with Rails, SASS. Ruby</h4>
           <div class="buttons">
-            <a href="https://github.com/kalavhan/facebook-clone/" target="_blank">Github<i class="fab fa-github-square layer2"></i></a>
-            <a href="https://frozen-forest-23599.herokuapp.com/" target="_blank">Live<i class="fas fa-globe"></i></a>
+            <a href="https://github.com/kalavhan/facebook-clone/" target="_blank">Github <i class="fab fa-github-square layer2"></i></a>
+            <a href="https://frozen-forest-23599.herokuapp.com/" target="_blank">Live <i class="fas fa-globe"></i></a>
           </div>
         </div>
       </div>
@@ -148,11 +148,33 @@
           <h2 class="title">Manga top</h2>
           <h4 class="description">Website to publish articles related to manga build with Rails, SASS. Ruby</h4>
           <div class="buttons">
-            <a href="https://github.com/kalavhan/manga-top/" target="_blank">Github<i class="fab fa-github-square layer2"></i></a>
-            <a href="https://blooming-crag-23204.herokuapp.com/" target="_blank">Live<i class="fas fa-globe"></i></a>
+            <a href="https://github.com/kalavhan/manga-top/" target="_blank">Github <i class="fab fa-github-square layer2"></i></a>
+            <a href="https://blooming-crag-23204.herokuapp.com/" target="_blank">Live <i class="fas fa-globe"></i></a>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="contactme">
+      <form action="php/contact.php" method="post">
+        <div class="form-field">
+          <label for="name">Name/Company name</label>
+          <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="form-field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+        </div>
+        <div class="form-field">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="email_title" required placeholder="Unable to Reset my Password" pattern=[A-Za-z0-9\s]{8,60}>
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </body>
   <script>
