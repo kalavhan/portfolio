@@ -130,6 +130,7 @@
     </div>
 
     <div class="projects">
+      <h2 class="projects-title">Projects</h2>
       <div class="project-card">
         <img class="image" src="images/fakebook.png" alt="">
         <div class="project-card-data">
@@ -156,18 +157,19 @@
     </div>
 
     <div class="contactme">
+      <h2 class="contactme-title">Contact me</h2>
       <form action="php/contact.php" method="post">
         <div class="form-field">
           <label for="name">Name/Company name</label>
-          <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+          <input type="text" id="name" name="visitor_name" placeholder="John Wick" pattern=[A-Z\sa-z]{3,20} required>
         </div>
         <div class="form-field">
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+          <input type="email" id="email" name="visitor_email" placeholder="john.wick@email.com" required>
         </div>
         <div class="form-field">
           <label for="subject">Subject</label>
-          <input type="text" id="subject" name="email_title" required placeholder="Unable to Reset my Password" pattern=[A-Za-z0-9\s]{8,60}>
+          <input type="text" id="subject" name="email_title" required placeholder="What's up?" pattern=[A-Za-z0-9\s]{8,60}>
         </div>
         <div class="form-field">
           <label for="message">Message</label>
