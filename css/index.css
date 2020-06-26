@@ -10,6 +10,86 @@
   grid-column: span 2;
   background-color: blue;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.me-section > .profile-img-container {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  border: 3px solid white;
+  border-radius: 75px;
+  overflow: hidden;
+  background-color: white;
+  margin-top: 50px;
+}
+
+.me-section > .profile-img-container > img {
+  height: 150px;
+  width: auto;
+}
+
+.me-section > h4 {
+  color: #fff;
+  margin-top: 22px;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.me-section > h3 {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 21px;
+}
+
+.me-section > p {
+  width: 74%;
+  margin-top: 40px;
+  color: #fff;
+  font-size: 18px;
+  padding-left: 10px;
+  border-left: 3px solid orange;
+}
+
+.me-section > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.me-section > ul > li {
+  margin: 10px;
+}
+
+.me-section > ul > li > a {
+  color: #fff;
+  font-size: 38px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 14px;
+  width: 90px;
+  top: 45px;
+  left: -30px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 .content-section {
