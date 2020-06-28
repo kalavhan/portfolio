@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;900&display=swap');
+html {
+  font-family: 'Playfair Display', serif;
+}
+
 .container {
   width: 100%;
   max-width: 1500px;
@@ -35,21 +40,22 @@
 .me-section > h4 {
   color: #fff;
   margin-top: 22px;
-  font-size: 23px;
+  font-size: 27px;
   font-weight: 900;
 }
 
 .me-section > h3 {
   color: #fff;
   margin-top: 10px;
-  font-size: 21px;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .me-section > p {
   width: 74%;
   margin-top: 40px;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   padding-left: 10px;
   border-left: 3px solid orange;
 }
@@ -94,16 +100,71 @@
 
 .content-section {
   grid-column: span 4;
-  background-color: green;
   height: 100vh;
+  overflow-y: scroll;
+  background-color: #f6f6f6;
 }
 
-.nav {
-  background-color: red;
-}
-
-.nav > ul {
+.projects-section {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  width: 90%;
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+.project > img {
+  height: 140px;
+  width: auto;
+}
+
+.project > .project-info {
+ margin-left: 10px; 
+}
+
+.project > .project-info > h4 {
+  font-size: 25px;
+  font-weight: 900;  
+}
+
+.project > .project-info > p {
+  font-size: 16px;
+}
+
+.project > .project-info > .buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project > .project-info > .buttons > a:nth-of-type(1) {
+  margin-right: 15px;
+}
+
+.project > .project-info > .buttons > a > button:hover {
+  cursor: pointer;
+}
+
+.project > .project-info > .buttons > a > button {
+  height: 35px;
+  border: none;
+}
+
+.project > .project-info > .buttons > a:nth-of-type(1) > button {
+  background-color: purple;
+  color: #fff;
+}
+
+.project > .project-info > .buttons > a:nth-of-type(2) > button {
+  background-color: rgb(108, 233, 6);
+  color: #fff;
 }
 
 .layer1 {
