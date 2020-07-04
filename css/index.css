@@ -7,12 +7,11 @@ html {
   width: 100%;
   max-width: 1500px;
   margin: 0 auto 0 auto;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
 }
 
 .me-section {
-  grid-column: span 2;
+  flex: 2;
   background-color: blue;
   height: 100vh;
   display: flex;
@@ -40,7 +39,7 @@ html {
 .me-section > h4 {
   color: #fff;
   margin-top: 22px;
-  font-size: 27px;
+  font-size: 25px;
   font-weight: 900;
 }
 
@@ -99,7 +98,7 @@ html {
 }
 
 .content-section {
-  grid-column: span 4;
+  flex: 5;
   height: 100vh;
   overflow-y: scroll;
   background-color: #f6f6f6;
@@ -121,17 +120,31 @@ html {
 
 
 .project > img {
-  height: 140px;
+  height: 200px;
   width: auto;
 }
 
 .project > .project-info {
  margin-left: 10px; 
+ display: flex;
+ flex-direction: column;
+ width: 100%;
 }
 
 .project > .project-info > h4 {
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 900;  
+}
+
+.project > .project-info > ul {
+  display: flex;
+  font-size: 50px;
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+.project > .project-info > ul > li {
+  margin-right: 10px;
 }
 
 .project > .project-info > p {
