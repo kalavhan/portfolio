@@ -9,6 +9,7 @@ html {
   max-width: 1500px;
   margin: 0 auto 0 auto;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .me-section {
@@ -42,6 +43,7 @@ html {
   margin-top: 22px;
   font-size: 25px;
   font-weight: 900;
+  text-align: center;
 }
 
 .me-section > h3 {
@@ -101,7 +103,6 @@ html {
 .content-section {
   flex: 5;
   height: 100vh;
-  overflow-y: scroll;
   background-color: #f6f6f6;
 }
 
@@ -117,12 +118,6 @@ html {
   background-color: #fff;
   padding: 20px;
   margin-top: 20px;
-}
-
-
-.project > img {
-  height: 200px;
-  width: auto;
 }
 
 .project > .project-info {
@@ -202,12 +197,45 @@ html {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 787px) {
+  .project {
+    flex-direction: column;
+  }
 
+  .content-section {
+    min-width: 395px;
+  }
+
+  .project > img {
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .me-section {
+    min-width: 394px;
+  }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 788px) {
+  .project > img {
+    height: 200px;
+    width: auto;
+  }
+  .me-section {
+    min-width: 327px;
+  }
 }
 
-@media screen and (min-width: 1340px) {
+@media screen and (min-width: 788px) and (max-width: 1145px) {
+  .content-section {
+    min-width: 800px;
+  }
+}
+
+@media screen and (min-width: 1146px) {
+  .content-section {
+    overflow-y: scroll;
+  }
 }
