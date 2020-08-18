@@ -60,6 +60,7 @@
       </div>
       <div class="content-section">
         <div class="projects-section">
+          <h1>Projects</h1>
           <div class="project layer1">
             <img src="images/cutme.png" alt="project-image">
             <div class="project-info">
@@ -122,7 +123,6 @@
                 </div>
             </div>
           </div>
-
           <div class="project layer1">
             <img src="images/mangatop.png" alt="project-image">
             <div class="project-info">
@@ -152,7 +152,6 @@
                 </div>
             </div>
           </div>
-
           <div class="project layer1">
             <img src="images/weather-app.png" alt="project-image">
             <div class="project-info">
@@ -181,7 +180,6 @@
               </div>
             </div>
           </div>
-
           <div class="project layer1">
             <img src="images/platform-game.png" alt="project-image">
             <div class="project-info">
@@ -213,6 +211,37 @@
             </div>
           </div>
         </div>
+        <div class="contactme-section">
+          <h1>Contact me</h1>
+          <form action="nose" class="column-flex">
+            <div id="name-container">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Tony Stark" required>  
+            </div>
+            <div id="organization-container">
+              <label for="organization">Organization</label>
+              <input type="text" id="organization" name="organization" placeholder="Stark industries (Optional)">  
+            </div>
+            <div id="email-container">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="name@example.com" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">  
+            </div>
+            <div id="subject-container">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected hidden aria-invalid="true">World domination</option>
+                <option value="Job offer">Job offer</option>
+                <option value="Collaboration">Collaboration</option>
+                <option value="Miscellaneous">Miscellaneous</option>
+              </select>  
+            </div>
+            <div id="message-container">
+              <label for="message" aria-required="true">Message</label>
+              <textarea id="message" name="message" placeholder=" " style="height:200px" required></textarea>  
+            </div>
+            <input type="submit" value="Send">
+          </form>
+        </div> 
       </div>
     </div>
   </body>

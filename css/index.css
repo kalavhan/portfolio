@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;900&display=swap');
 
 html {
   font-family: 'Noto Sans JP', sans-serif;
@@ -102,8 +102,15 @@ html {
 
 .content-section {
   flex: 5;
-  height: 100vh;
   background-color: #f6f6f6;
+}
+
+.content-section > div > h1 {
+  font-size: 35px;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .projects-section {
@@ -176,6 +183,50 @@ html {
   color: #fff;
 }
 
+.contactme-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.contactme-section > form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 95%;
+}
+.contactme-section > form > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.contactme-section > form > div > label {
+  font-size: 14px;
+  margin-bottom: 4px;
+  padding-left: 2px;
+}
+
+.contactme-section > form > input[type=submit] {
+  width: 20%;
+  margin-top: 10px;
+  background-color: rgb(44, 147, 231);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#message-container > textarea{
+  resize: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+}
+
 .layer1 {
 	-webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
@@ -195,7 +246,6 @@ html {
 	-webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
     box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
 }
-
 
 @media screen and (max-width: 787px) {
   .project {
@@ -236,6 +286,26 @@ html {
 
 @media screen and (min-width: 1146px) {
   .content-section {
+    max-height: 100vh;
     overflow-y: scroll;
+  }
+  #name-container {
+    width: 49%;
+  }
+
+  #organization-container {
+    width: 49%;
+  }
+
+  #email-container {
+    width: 49%;
+  }
+
+  #subject-container {
+    width: 49%;
+  }
+
+  #message-container {
+    width: 98%;
   }
 }
