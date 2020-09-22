@@ -182,7 +182,7 @@ html {
 
 .project > .project-info > .buttons > a:nth-of-type(2) > button {
   background-color: rgb(108, 233, 6);
-  color: #fff;
+  color: #000;
 }
 
 .contactme-section {
@@ -215,8 +215,8 @@ html {
 .contactme-section > form > input[type=submit] {
   width: 20%;
   margin-top: 10px;
-  background-color: rgb(44, 147, 231);
-  color: #fff;
+  background-color: #2ca4e7;
+  color: #060606;
   border: none;
   font-size: 20px;
   padding: 5px;
@@ -227,6 +227,7 @@ html {
   resize: none;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 14px;
+  padding: 5px;
 }
 
 .layer1 {
