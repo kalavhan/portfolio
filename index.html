@@ -17,7 +17,15 @@
   </head>
   <body>
     <div class="container">
-      <div class="me-section">
+      <div id="menuModal">
+        <div class="menu-content">
+          <button id="menuButtonClose"><i class="fas fa-window-close"></i></button>
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactMe">Contact me</a>
+        </div>
+      </div>
+      <div class="me-section" id="home">
         <button id="menuButton"><i class="fas fa-bars"></i></button>
         <div class="profile-img-container">
           <img src="images/face.png" alt="face image">
@@ -59,7 +67,7 @@
         <p>I’m an innovative and passionate developer, always trying to find solutions to the problems in the most simple yet creative way</p>
       </div>
       <div class="content-section">
-        <div class="projects-section">
+        <div id="projects" class="projects-section">
           <h1>Projects</h1>
           <div class="project layer1">
             <img src="images/cutme.png" alt="project-image">
@@ -209,7 +217,7 @@
             </div>
           </div>
         </div>
-        <div class="contactme-section">
+        <div id="contactMe" class="contactme-section">
           <h1>Contact me</h1>
           <form action="nose" class="column-flex">
             <div id="name-container">
