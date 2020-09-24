@@ -4,6 +4,10 @@ html {
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+body {
+  background-color: #f6f6f6;
+}
+
 .container {
   width: 100%;
   max-width: 1500px;
@@ -110,13 +114,14 @@ html {
   font-weight: 500;
   align-self: flex-start;
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .projects-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
 }
 
 .project {
@@ -136,7 +141,8 @@ html {
 
 .project > .project-info > h4 {
   font-size: 28px;
-  font-weight: 900;  
+  font-weight: 900;
+  padding-bottom: 10px;
 }
 
 .project > .project-info > ul {
@@ -152,6 +158,7 @@ html {
 
 .project > .project-info > p {
   font-size: 16px;
+  line-height: 20px;
 }
 
 .project > .project-info > .buttons {
@@ -180,7 +187,7 @@ html {
 
 .project > .project-info > .buttons > a:nth-of-type(2) > button {
   background-color: rgb(108, 233, 6);
-  color: #fff;
+  color: #000;
 }
 
 .contactme-section {
@@ -188,7 +195,7 @@ html {
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 .contactme-section > form {
   display: flex;
@@ -213,8 +220,8 @@ html {
 .contactme-section > form > input[type=submit] {
   width: 20%;
   margin-top: 10px;
-  background-color: rgb(44, 147, 231);
-  color: #fff;
+  background-color: #2ca4e7;
+  color: #060606;
   border: none;
   font-size: 20px;
   padding: 5px;
@@ -225,6 +232,71 @@ html {
   resize: none;
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 14px;
+  padding: 5px;
+}
+
+.menu-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: blue;
+  z-index: 3;
+  justify-content: flex-end;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  display: none;
+}
+
+#menuModal {
+  position: fixed;
+  top: 0;
+  z-index: 4;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menuModal > .menu-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+
+#menuModal > .menu-content > #menuButtonClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: #0000ee;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#menuModal > .menu-content > a {
+  font-size: 30px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+#menuModal > .menu-content > a:visited {
+  color: #0000ee;
+}
+
+.modal-active {
+  display: flex;
+}
+
+.modal-inactive {
+  display: none;
 }
 
 .layer1 {
@@ -248,12 +320,24 @@ html {
 }
 
 @media screen and (max-width: 787px) {
-  .project {
-    flex-direction: column;
+  
+  .me-section > h4 {
+    color: #fff;
+    margin-top: 22px;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  .me-section > h3 {
+    color: #fff;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 500;
   }
 
-  .content-section {
-    min-width: 395px;
+  .project {
+    flex-direction: column;
   }
 
   .project > img {
@@ -263,8 +347,34 @@ html {
     margin-right: auto;
   }
 
+  .project > .project-info > ul {
+    display: flex;
+    font-size: 50px;
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .project > .project-info > .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .me-section {
-    min-width: 394px;
+    min-width: 100vw;
+  }
+
+  .contactme-section > form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+  }
+
+  .contactme-section > form > input[type=submit] {
+    align-self: center;
   }
 }
 
@@ -278,9 +388,32 @@ html {
   }
 }
 
+@media screen and (max-width: 1138px) {
+  .me-section {
+    position: relative;
+  }
+  #menuButton {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .menu-header {
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 788px) and (max-width: 1145px) {
   .content-section {
     min-width: 800px;
+  }
+  .contactme-section > form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactme-section > form > div {
+    width: 90%;
   }
 }
 

@@ -10,7 +10,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
 			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -18,7 +17,18 @@
   </head>
   <body>
     <div class="container">
-      <div class="me-section">
+      <div id="menuModal" class="modal-inactive">
+        <div class="menu-content">
+          <button id="menuButtonClose" onclick="closeModal()"><i class="fas fa-window-close"></i></button>
+          <a onclick="closeModal()" href="#home">Home</a>
+          <a onclick="closeModal()" href="#projects">Projects</a>
+          <a onclick="closeModal()" href="#contactMe">Contact me</a>
+        </div>
+      </div>
+      <div class="menu-header">
+        <button id="menuButton"><i class="fas fa-bars"></i></button>
+      </div>
+      <div class="me-section" id="home">
         <div class="profile-img-container">
           <img src="images/face.png" alt="face image">
         </div>
@@ -55,18 +65,18 @@
           </li>
         </ul>
         <h4>Irwing Josué Brigido Espinoza</h4>
-        <h3>Full-stack web developer</h3>
-        <p>I'm an innovative and passionate developer always trying to find solutions to the problems in the most simple yet creative way</p>
+        <h3>Full Stack Web Developer</h3>
+        <p>I’m an innovative and passionate developer, always trying to find solutions to the problems in the most simple yet creative way</p>
       </div>
       <div class="content-section">
-        <div class="projects-section">
+        <div id="projects" class="projects-section">
           <h1>Projects</h1>
           <div class="project layer1">
             <img src="images/cutme.png" alt="project-image">
             <div class="project-info">
               <h4>Cut me</h4>
               <p>
-                An appointments application designed for barber shops, where users can see the price of the services and make an appoitnment with their prefer barber
+                A web application designed for barbers. Users can see services, prices, and make an appointment with their favourite barber. 
               </p>
               <ul>
                 <li><i class="devicon-react-original-wordmark colored"></i></li>
@@ -96,9 +106,9 @@
             <div class="project-info">
               <h4>Fakebook</h4>
               <p>
-                This project is a social media web app built on RoR,
-                  the user can create an account, create a post, comment a post or like a post,
-                 add another user as a friend and edit their personal info.
+                Social media app that with the core features of Facebook.
+                  The user can create an account, create a post, comment or like a post,
+                 add another user as a friend and edit their personal information.
               </p>
               <ul>
                 <li><i class="devicon-ruby-plain-wordmark colored"></i></li>
@@ -127,7 +137,7 @@
             <img src="images/mangatop.png" alt="project-image">
             <div class="project-info">
               <h4>MangaTop</h4>
-              <p>Website for the review of mangas, users can create accounts, like articles, comment articles, create their own articles, the home page is dynamicaly sorted by the most recent articles and the most voted article
+              <p>Website for the review of mangas. Users can create an account, like or comment reviews, create their own review, the home page is dynamicaly sorted by the most recent articles and the most voted article at center.
               </p>
               <ul>
                 <li><i class="devicon-ruby-plain-wordmark colored"></i></li>
@@ -156,7 +166,7 @@
             <img src="images/weather-app.png" alt="project-image">
             <div class="project-info">
               <h4>Weather app</h4>
-              <p>The user can get weather info of a desired city by searching it in the search box with the use of google places API and OpenWeatherMap API, the user gets displayed multiple info such as current weather, how it feels like, wind, humidity and pressure.
+              <p>Weather app built with JS. The user can search any city with a simple search box powered by Google Place API and the weather details are retrieved with the OpenWeather API.
               </p>
               <ul>
                 <li><i class="devicon-javascript-plain colored"></i></li>
@@ -185,9 +195,7 @@
             <div class="project-info">
               <h4>Avoider</h4>
               <p>
-                HTML 5 video game, built with Phaser 3, the user has to move the character to the left and right 
-                jumping from one to another moving platform while avoiding falling rocks, if you fall or touch a rock it's game over,
-                after dying there will be a leaderboard with the scores of all the previous users.
+                HTML 5 video game, built with Phaser 3, jump from one platform to the other while avoiding falling rocks, last as much as possible to add a record.
               </p>
               <ul>
                 <li><i class="devicon-javascript-plain colored"></i></li>
@@ -211,9 +219,9 @@
             </div>
           </div>
         </div>
-        <div class="contactme-section">
+        <div id="contactMe" class="contactme-section">
           <h1>Contact me</h1>
-          <form action="nose" class="column-flex">
+          <form action="/mailer.php" class="column-flex">
             <div id="name-container">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="Tony Stark" required>  
@@ -245,7 +253,5 @@
       </div>
     </div>
   </body>
-  <script>
-    
-  </script>
+  <script src="js/index.js"></script>
 </html>
