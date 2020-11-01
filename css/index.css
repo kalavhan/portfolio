@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@200;400;700;900&display=swap');
+
 html {
   background-color: #e5e5e5;
+  font-family: 'Inter', sans-serif;
 }
 
 body {
-  max-width: 1350px;
+  max-width: 1440px;
 }
 
 nav {
-  height: 45px;
+  height: 64px;
   background-color: #3e3c3c;
   position: sticky;
   top: 0;
@@ -17,7 +20,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   color: #fbfbfb;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 nav > a {
@@ -40,4 +43,88 @@ nav > ul > li {
 nav > ul > li > a {
   text-decoration: none;
   color: inherit
+}
+
+.section-home {
+  height: calc(100vh - 64px);
+  max-height: 870px;
+  width: 100%;
+  background-color: #1c1a19;
+  color: #fbfbfb;
+}
+
+.section-home-greeting {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 30%;
+}
+
+.section-home-greeting > h1, h2 {
+  color: #F55800;
+  font-family: 'Crete Round', serif;
+}
+
+.section-home-greeting > h1 {
+  font-size: 54px;
+}
+
+.section-home-greeting > h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.section-home-greeting > h3 {
+  font-size: 26px;
+}
+
+.section-home > ul {
+  position: absolute;
+  left: 5%;
+  top: 34%;
+}
+
+.section-home > ul > li > a {
+  margin-bottom: 15px;
+}
+
+.section-home > ul > li > a {
+  color: #fbfbfb;
+  font-size: 25px;
+}
+
+.section-home-image {
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  right: 10%;
+}
+
+.section-home-image > img {
+  width: 100%;
+  height: auto;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip > .tooltiptext {
+  visibility: hidden;
+  font-size: 14px;
+  width: 90px;
+  top: 2px;
+  left: 33px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
 }
