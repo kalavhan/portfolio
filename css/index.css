@@ -51,41 +51,39 @@ nav > ul > li > a {
   width: 100%;
   background-color: #1c1a19;
   color: #fbfbfb;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-left: 5%;
 }
 
 .section-home-greeting {
-  position: absolute;
-  top: 30%;
-  left: 15%;
-  width: 30%;
+  min-width: 375px;
 }
 
 .section-home-greeting > h1, h2 {
   color: #F55800;
   font-family: 'Crete Round', serif;
-}
-
-.section-home-greeting > h1 {
-  font-size: 54px;
+  font-size: 52px;
+  line-height: 61.5px;
 }
 
 .section-home-greeting > h2 {
-  font-size: 34px;
   margin-bottom: 10px;
 }
 
 .section-home-greeting > h3 {
-  font-size: 26px;
+  font-size: 32px;
+  line-height: 44px;
 }
 
-.section-home > ul {
-  position: absolute;
-  left: 5%;
-  top: 34%;
+.section-home-greeting > p {
+  font-size: 20px;
+  line-height: 32px;
 }
 
-.section-home > ul > li > a {
-  margin-bottom: 15px;
+.section-home-greeting > {
+  font-size: 20px;
 }
 
 .section-home > ul > li > a {
@@ -96,8 +94,9 @@ nav > ul > li > a {
 .section-home-image {
   width: 40%;
   height: 100%;
-  position: absolute;
-  right: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .section-home-image > img {
@@ -128,3 +127,56 @@ nav > ul > li > a {
   position: absolute;
   z-index: 1;
 }
+
+@media screen and (max-width: 787px) {
+  .section-home {
+    flex-direction: column;
+  }
+  .section-home-greeting {
+    order: 0;
+  }
+  .section-home > ul {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .section-home > ul > li > a {
+    margin-right: 25px;
+  }
+
+  .section-home-image {
+    order: 2;
+  }
+
+  .section-home-greeting {
+    width: 80%;
+    min-width: 375px;
+  }
+
+}
+@media screen and (min-width: 788px) {
+  .section-home-greeting {
+    width: 45%;
+  }
+
+  .section-home > ul {
+    width: 10%;
+  }
+  
+  .section-home > ul > li > a {
+    margin-bottom: 15px;
+  }
+  /* .section-home-greeting {
+    top: 30%;
+    left: 15%;
+  }
+  .section-home > ul {
+    left: 5%;
+    top: 34%;
+  } */
+}
+@media screen and (max-width: 1138px) {}
+@media screen and (min-width: 788px) and (max-width: 1145px) {}
