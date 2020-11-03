@@ -9,41 +9,47 @@ body {
   max-width: 1440px;
 }
 
-nav {
+.navbar {
   height: 64px;
   background-color: #3e3c3c;
   position: sticky;
   top: 0;
   z-index: 4;
   display: flex;
-  padding-left: 15%;
   align-items: center;
   justify-content: space-between;
   color: #fbfbfb;
   font-size: 17px;
 }
 
-nav > a {
+.navbar > a {
   text-decoration: none;
 }
 
-nav > a:visited {
+.navbar > a:visited {
   color: inherit;
 }
 
-nav > ul {
+.navbar > ul {
   display: flex;
-  padding-right: 15%;
 }
 
-nav > ul > li {
+.navbar > ul > li {
   margin-right: 22px;
 }
 
-nav > ul > li > a {
+.navbar > ul > li > a {
   text-decoration: none;
   color: inherit
 }
+
+.navbar > ul > li > button{
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  font-size: 20px;
+  color: inherit;
+  border: none;
+} 
 
 .section-home {
   height: calc(100vh - 64px);
@@ -133,15 +139,18 @@ nav > ul > li > a {
   .section-home {
     flex-direction: column;
   }
+
   .section-home-greeting {
     order: 0;
   }
+
   .section-home > ul {
     order: 1;
     display: flex;
     flex-direction: row;
     margin-top: 20px;
     width: 80%;
+    padding-right: 10%; 
   }
 
   .section-home > ul > li > a {
@@ -169,10 +178,22 @@ nav > ul > li > a {
     opacity: .5;
   }
 
+  .navbar {
+    padding-left: 5%;
+  }
+
+  .navbar > ul > li:nth-child(-n+3) {
+    display: none;
+  }
+
 }
 @media screen and (min-width: 788px) {
   .section-home-greeting {
     width: 45%;
+  }
+
+  .navbar {
+    padding-left: 15%;
   }
 
   .section-home > ul {
@@ -182,6 +203,14 @@ nav > ul > li > a {
   .section-home > ul > li > a {
     margin-bottom: 15px;
   }
+
+  .navbar > ul {
+    padding-right: 15%;
+  }
+
+  .navbar > ul > li:nth-of-type(4){
+    display: none;
+  } 
   /* .section-home-greeting {
     top: 30%;
     left: 15%;
