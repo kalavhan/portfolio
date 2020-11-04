@@ -6,6 +6,7 @@ html {
 }
 
 body {
+  position: relative;
   max-width: 1440px;
 }
 
@@ -54,7 +55,7 @@ body {
 .section-home {
   height: calc(100vh - 64px);
   max-height: 870px;
-  width: 100%;
+  max-width: 100%;
   background-color: #1c1a19;
   color: #fbfbfb;
   display: flex;
@@ -135,6 +136,58 @@ body {
   z-index: 1;
 }
 
+.hide {
+  display: none;
+}
+
+.modal-menu {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3C3A39;
+  z-index: 10;
+  color: #FFF5E1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.modal-menu > div {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-menu > div > button {
+  color: #67798E;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 28px;
+}
+
+.modal-menu > ul {
+  width: 80%;
+}
+
+.modal-menu > ul > li {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-bottom: 1px solid #6F6C6B;
+}
+
+.modal-menu > ul > li > a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.modal-menu > ul > li > a:visited {
+  color: inherit;
+}
+
 @media screen and (max-width: 787px) {
   .section-home {
     flex-direction: column;
@@ -210,7 +263,9 @@ body {
 
   .navbar > ul > li:nth-of-type(4){
     display: none;
-  } 
+  }
+
+  
   /* .section-home-greeting {
     top: 30%;
     left: 15%;
