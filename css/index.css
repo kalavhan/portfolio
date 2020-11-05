@@ -188,6 +188,103 @@ body {
   color: inherit;
 }
 
+.section-projects {
+  display: flex;
+  flex-direction: column;
+  padding: 8% 10% 8% 10%;
+  background-color: #fcfcfc;
+  background-clip: border-box;
+  width: 80%;
+  max-width: 80%;
+  overflow: hidden;
+  position: relative;
+  color: #091E42;
+}
+
+.section-projects-title {
+  display: flex;
+}
+
+.section-projects-title > h2 {
+  font-size: 36px;
+  font-family: 'Crete Round', serif;
+  color: inherit;
+}
+
+.projects-list {
+  width: 100%;
+  position: relative;
+}
+
+.main-project {
+  width: 100%;
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap;
+} 
+
+.main-project > img {
+  width: 60%;
+  height: auto;
+}
+
+.main-description {
+  width: 38%;
+  padding-left: 2%;
+}
+
+.main-description > h2 {
+  color: inherit;
+  font-size: 36px;
+}
+
+.main-description > p {
+  font-size: 18px;
+}
+
+.main-tags {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.main-tags > li {
+  border: 1px solid #000;
+  margin-right: 4px;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.main-project-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: #f55800;
+  border: 1px solid #F55800;
+  padding: 12px 8px 12px 8px;
+  font-size: 17px;
+  color: #fff;
+}
+
+.button > a {
+  text-decoration: none;
+  padding: 12px 8px 12px 8px;
+}
+
+.button > a:visited {
+  color: unset;
+}
+
+.button:hover {
+  background: #FFF5E1;
+  border: 1px solid #F55800;
+  color: #F55800;
+}
+
 @media screen and (max-width: 787px) {
   .section-home {
     flex-direction: column;
