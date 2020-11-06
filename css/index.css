@@ -176,7 +176,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 8% 10% 8% 10%;
-  background-color: #fcfcfc;
+  background-color: #fbfbfb;
   background-clip: border-box;
   width: 80%;
   max-width: 80%;
@@ -198,6 +198,9 @@ body {
 .projects-list {
   width: 100%;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .main-project {
@@ -205,6 +208,7 @@ body {
   display: flex;
   margin-top: 40px;
   flex-wrap: wrap;
+  margin-bottom: 15px;
 } 
 
 .main-project > img {
@@ -269,6 +273,114 @@ body {
   color: #F55800;
 }
 
+.extra-project {
+  width: 32%;
+  position: relative;
+  overflow: hidden;
+  height: 435px;
+  margin-bottom: 15px;  
+}
+
+.extra-project > img {
+  height: 100%;
+  width: auto;
+}
+
+.extra-project-description {
+  position: absolute;
+  z-index: 2;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.21) 0%, rgba(0,0,0,0.78) 100%);
+  top: 0;
+  height: 100%;
+  width: 90%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 5% 0 5%;
+}
+
+.extra-project-description > h4 {
+  color: inherit;
+  font-size: 30px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.extra-project-description > p {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.extra-project-description > ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0 10px 0;
+}
+
+.extra-project-description > ul > li {
+  background-color: rgba(255, 255, 255, 0.24);
+  padding: 8px 6px 8px 6px;
+  margin: 0 4px 4px 0;
+}
+
+.extra-project-buttons {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  bottom: -90px;
+  z-index: 2;
+  width: 100%;
+}
+
+.extra-project-buttons > li:nth-child(-n+2) {
+  width: calc(45% - 1px);
+}
+
+.extra-project-buttons > li:nth-child(3) {
+  width: calc(100% - 1px);
+}
+
+.extra-project-buttons > li {
+  text-align: center;
+  border-color: rgb(236, 179, 73);
+}
+
+.extra-project-buttons > li > a {
+  padding: 10% 25% 10% 25%;
+}
+
+.extra-project:hover > .extra-project-description {
+  animation-name: extraProjectDescriptionHide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.extra-project:hover > .extra-project-buttons {
+  animation-name: showExtraProjectButtons;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes extraProjectDescriptionHide {
+  from {
+    top: 0;
+  }
+  to {
+    top: -435px;
+    display: none;
+  }
+}
+
+@keyframes showExtraProjectButtons {
+  from {
+    bottom: -90px;
+  }
+
+  to {
+    bottom: 0px;
+  }
+}
 @media screen and (max-width: 787px) {
   .section-home {
     flex-direction: column;
