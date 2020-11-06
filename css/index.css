@@ -246,20 +246,31 @@ body {
 .main-project-buttons {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 20px;
+}
+
+.main-project-buttons > li:nth-of-type(-n + 2) {
+  width: calc(50% - 2px);
+}
+
+.main-project-buttons > li:nth-of-type(3) {
+  width: calc(100% - 2px);
 }
 
 .button {
   background-color: #f55800;
-  border: 1px solid #F55800;
-  padding: 12px 8px 12px 8px;
+  background-clip: content-box;
+  text-align: center;
+  border: 1px solid rgba(236, 179, 73, 0);
   font-size: 17px;
   color: #fff;
 }
 
 .button > a {
+  text-align: center;
   text-decoration: none;
+  display: block;
   padding: 12px 8px 12px 8px;
 }
 
@@ -334,20 +345,16 @@ body {
 }
 
 .extra-project-buttons > li:nth-child(-n+2) {
-  width: calc(45% - 1px);
+  width: calc(50% - 2px);
 }
 
 .extra-project-buttons > li:nth-child(3) {
-  width: calc(100% - 1px);
-}
-
-.extra-project-buttons > li {
-  text-align: center;
-  border-color: rgb(236, 179, 73);
+  width: calc(100% - 2px);
 }
 
 .extra-project-buttons > li > a {
-  padding: 10% 25% 10% 25%;
+  display: block;
+  width: 100%;
 }
 
 .extra-project:hover > .extra-project-description {
