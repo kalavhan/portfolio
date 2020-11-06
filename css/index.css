@@ -71,26 +71,10 @@ body {
 .section-home-greeting > h1, h2 {
   color: #F55800;
   font-family: 'Crete Round', serif;
-  font-size: 52px;
-  line-height: 61.5px;
 }
 
 .section-home-greeting > h2 {
   margin-bottom: 10px;
-}
-
-.section-home-greeting > h3 {
-  font-size: 32px;
-  line-height: 44px;
-}
-
-.section-home-greeting > p {
-  font-size: 20px;
-  line-height: 32px;
-}
-
-.section-home-greeting > {
-  font-size: 20px;
 }
 
 .section-home > ul > li > a {
@@ -300,7 +284,7 @@ body {
     flex-direction: row;
     margin-top: 20px;
     width: 80%;
-    padding-right: 10%; 
+    min-width: 375px;
   }
 
   .section-home > ul > li > a {
@@ -336,6 +320,23 @@ body {
     display: none;
   }
 
+  .section-home-greeting > h1, h2 {
+    color: #F55800;
+    font-family: 'Crete Round', serif;
+    font-size: 49px;
+    line-height: 58.5px;
+  }
+
+  .section-home-greeting > h3 {
+    font-size: 29px;
+    line-height: 41px;
+  }
+  
+  .section-home-greeting > p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
 }
 @media screen and (min-width: 788px) {
   .section-home-greeting {
@@ -362,6 +363,20 @@ body {
     display: none;
   }
 
+  .section-home-greeting > h1, h2 {
+    font-size: 52px;
+    line-height: 61.5px;
+  }
+  
+  .section-home-greeting > h3 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  
+  .section-home-greeting > p {
+    font-size: 20px;
+    line-height: 32px;
+  }
   
   /* .section-home-greeting {
     top: 30%;
