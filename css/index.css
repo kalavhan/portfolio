@@ -285,11 +285,14 @@ body {
 }
 
 .extra-project {
-  width: 32%;
+  width: 49%;
   position: relative;
   overflow: hidden;
   height: 435px;
-  margin-bottom: 15px;  
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 
 .extra-project > img {
@@ -369,6 +372,12 @@ body {
   animation-fill-mode: forwards;
 }
 
+.extra-project:hover > img {
+  animation-name: extraProjectImageResize;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
 @keyframes extraProjectDescriptionHide {
   from {
     top: 0;
@@ -386,6 +395,17 @@ body {
 
   to {
     bottom: 0px;
+  }
+}
+
+@keyframes extraProjectImageResize {
+  from {
+    height: 100%;
+    width: auto;
+  }
+  to {
+    height: auto;
+    width: 100%;
   }
 }
 @media screen and (max-width: 787px) {
