@@ -476,6 +476,16 @@ body {
     line-height: 30px;
   }
 
+
+  .projects-list {
+    justify-content: center;
+  }
+
+  .extra-project {
+    width: 80%;
+    min-width: 375px;
+  }
+
 }
 @media screen and (min-width: 788px) {
   .section-home-greeting {
