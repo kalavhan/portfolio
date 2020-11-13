@@ -319,7 +319,6 @@ body {
 .extra-project-description > ul {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px 0 10px 0;
 }
 
 .extra-project-description > ul > li {
@@ -332,17 +331,12 @@ body {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
-  bottom: -90px;
   z-index: 2;
   width: 100%;
 }
 
 .extra-project-buttons > li:nth-child(-n+2) {
   width: calc(50% - 2px);
-}
-
-.extra-project-buttons > li:nth-child(3) {
-  width: calc(100% - 2px);
 }
 
 .extra-project-buttons > li > a {
@@ -470,6 +464,16 @@ body {
     min-width: 375px;
   }
 
+  .extra-project-description > ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 60px 0;
+  }
+
+  .extra-project-buttons {
+    bottom: 0;
+  }
+
 }
 @media screen and (min-width: 788px) {
   .section-home-greeting {
@@ -532,6 +536,16 @@ body {
   .main-description {
     width: 38%;
     padding-left: 2%;
+  }
+
+  .extra-project-description > ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 10px 0;
+  }
+
+  .extra-project-buttons {
+    bottom: -90px;
   }
 
   .extra-project:hover > .extra-project-description {
