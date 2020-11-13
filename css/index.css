@@ -190,7 +190,7 @@ body {
 }
 
 .section-projects-title > h2 {
-  font-size: 36px;
+  font-size: 34px;
   font-family: 'Crete Round', serif;
   color: inherit;
 }
@@ -207,18 +207,7 @@ body {
   width: 100%;
   display: flex;
   margin-top: 40px;
-  flex-wrap: wrap;
   margin-bottom: 15px;
-} 
-
-.main-project > img {
-  width: 60%;
-  height: auto;
-}
-
-.main-description {
-  width: 38%;
-  padding-left: 2%;
 }
 
 .main-description > h2 {
@@ -239,6 +228,7 @@ body {
 .main-tags > li {
   border: 1px solid #000;
   margin-right: 4px;
+  margin-bottom: 4px;
   padding: 5px;
   background-color: #fff;
 }
@@ -360,24 +350,6 @@ body {
   width: 100%;
 }
 
-.extra-project:hover > .extra-project-description {
-  animation-name: extraProjectDescriptionHide;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-.extra-project:hover > .extra-project-buttons {
-  animation-name: showExtraProjectButtons;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-.extra-project:hover > img {
-  animation-name: extraProjectImageResize;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
 @keyframes extraProjectDescriptionHide {
   from {
     top: 0;
@@ -476,9 +448,21 @@ body {
     line-height: 30px;
   }
 
+  .section-projects-title {
+    flex-direction: column;
+  }
 
   .projects-list {
     justify-content: center;
+  }
+
+  .main-project {
+    flex-direction: column;
+  } 
+  
+  .main-project > img {
+    width: 100%;
+    height: auto;
   }
 
   .extra-project {
@@ -525,6 +509,47 @@ body {
   .section-home-greeting > p {
     font-size: 20px;
     line-height: 32px;
+  }
+
+  .section-projects-title {
+    justify-content: space-between;
+  }
+
+  .section-projects-title > img {
+    width: 60%;
+    margin-right: 1%;
+  }
+
+  .main-project {
+    flex-wrap: wrap;
+  } 
+  
+  .main-project > img {
+    width: 60%;
+    height: auto;
+  }
+  
+  .main-description {
+    width: 38%;
+    padding-left: 2%;
+  }
+
+  .extra-project:hover > .extra-project-description {
+    animation-name: extraProjectDescriptionHide;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .extra-project:hover > .extra-project-buttons {
+    animation-name: showExtraProjectButtons;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .extra-project:hover > img {
+    animation-name: extraProjectImageResize;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
   
   /* .section-home-greeting {
