@@ -344,6 +344,52 @@ body {
   width: 100%;
 }
 
+.section-about {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 0 10% 0 10%;
+  background-color: #1c1a19;
+}
+
+.section-about > .top {
+  display: flex;
+  width: 100%;
+  margin-top: 80px;
+  max-height: 582px;
+  position: relative;
+}
+
+.section-about > .top > .about-description {
+  width: 60%;
+  min-width: 52%;
+  color: #F4F5F7;
+}
+
+.section-about > .top > .about-description > p {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 20px 0 50px 0;
+}
+
+.section-about > .top > .about-description > a {
+  cursor: pointer;
+  height: 24px;
+  padding: 12px 7px 12px 7px;
+  border: 1px solid #F55800;
+  background-clip: border-box;
+}
+
+.section-about > .top > img {
+  width: 100%;
+  height: auto;
+}
+
+.section-about > img {
+  width: 100%;
+  margin: 60px 0 60px 0;
+}
+
 @keyframes extraProjectDescriptionHide {
   from {
     top: 0;
