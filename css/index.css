@@ -545,6 +545,22 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
+  .section-about > .top {
+    flex-direction: column;
+  }
+
+  .section-about > .top > .about-description {
+    z-index: 2;
+    width: 100%;
+  }
+
+  .section-about > .top > img{
+    position: absolute;
+    opacity: 0.4;
+    bottom: -80px;
+    right: -200px;
+  }
 }
 @media screen and (min-width: 788px) {
   .section-home-greeting {
