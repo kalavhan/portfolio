@@ -403,6 +403,97 @@ body {
   line-height: 40px;
 }
 
+.section-contact {
+  background-color: #fbfbfb;
+  display: flex;
+  padding: 10%;
+}
+
+.section-contact > .message {
+  width: 50%;
+}
+
+.section-contact > .message > p {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 50px;
+  width: 100%;
+}
+
+.section-contact > .message-form > form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.section-contact > .message-form > form > .form-names {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-contact > .message-form > form > .form-names > input {
+  border: none;
+  border-bottom: 1px solid #aaa9a8;
+  width: 48%;
+  font-size: 18px;
+  padding: 2px;
+  margin-bottom: 20px;
+}
+
+.section-contact > .message-form > form > input:nth-of-type(1) {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #aaa9a8;
+  font-size: 18px;
+  padding: 2px;
+  margin-bottom: 20px;
+}
+
+.section-contact > .message-form > form > textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #aaa9a8;
+  resize: none;
+  font-size: 18px;
+  padding: 2px;
+  margin-bottom: 20px;
+}
+
+.section-contact > .message-form > form > input:nth-of-type(2) {
+  background-color: #F55800;
+  color: #fff;
+  width: 122px;
+  padding: 12px;
+  border: none;
+}
+
+.footer {
+  width: 100%;
+  height: 72px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #b6b7bb;
+}
+
+.footer > ul {
+  display: flex;
+  font-size: 24px;
+}
+
+.footer > ul > li {
+  margin: 10px;
+}
+
+.footer > ul > li > a {
+  color: #505f79;
+}
+
+.footer > ul > li > a:visited {
+  color: #505f79;
+}
+
 @keyframes extraProjectDescriptionHide {
   from {
     top: 0;
