@@ -16,241 +16,233 @@
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
-    <div class="container">
-      <div id="menuModal" class="modal-inactive">
-        <div class="menu-content">
-          <button id="menuButtonClose" onclick="closeModal()"><i class="fas fa-window-close"></i></button>
-          <a onclick="closeModal()" href="#home">Home</a>
-          <a onclick="closeModal()" href="#projects">Projects</a>
-          <a onclick="closeModal()" href="#contactMe">Contact me</a>
+    <nav class="navbar">
+      <a href="#home">Josué Brigido</a>
+      <ul>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="mailto:josue.brigido1@gmail.com"><i class="far fa-envelope"></i></a></li>
+        <li><button id="openMenuBtn"><i class="fas fa-bars"></i></button></li>
+      </ul>
+    </nav>
+    <div class="section-home" id="home">
+      <ul>
+        <li>
+          <a class="tooltip" href="https://github.com/kalavhan/">
+            <i class="fab fa-github"></i>
+            <span class="tooltiptext">Github</span>
+          </a>
+        </li>
+        <li>
+          <a class="tooltip" href="https://www.linkedin.com/in/kalavhan/">
+            <i class="fab fa-linkedin"></i>
+            <span class="tooltiptext">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a class="tooltip" href="https://angel.co/u/kalavhan">
+            <i class="fab fa-angellist"></i>
+            <span class="tooltiptext">Angel list</span>
+          </a>
+        </li>
+        <li>
+          <a class="tooltip" href="https://www.kalavhan.com/Resume.pdf" target="_blank">
+            <i class="far fa-file-alt"></i>
+            <span class="tooltiptext">Resume</span>
+          </a>
+        </li>
+      </ul>
+      <div class="section-home-greeting">
+        <h1>Hello There!</h1>
+        <h2>I'm Josué Brigido</h2>
+        <h3>I'm a Fullstack Web Developer</h3>
+        <p>I can help you make that project or feature that is in your mind come to reality, check out some of my work and if you like it don't hestitate to contact me</p>  
+      </div>
+      <div class="section-home-image">
+        <img src="./images/coder.png" alt="programmer">
+      </div>
+    </div>
+    <div class="section-projects" id="projects">
+      <div class="section-projects-title">
+        <h2>My Recent Works</h2>
+        <img src="./images/line.svg" alt="line">
+      </div>
+      <div class="projects-list">
+        <div class="main-project">
+          <img src="./images/cutme.png" alt="">
+          <div class="main-description">
+            <h2>Cut me</h2>
+            <p>Appointmes app built with Ruby On Rails and React. Users can see services, prices, and make an appointment with their favourite barber.</p>
+            <ul class="main-tags">
+              <li>RoR API</li>
+              <li>React</li>
+              <li>PostgreSql</li>
+              <li>JavaScript</li>
+            </ul>
+            <ul class="main-project-buttons">
+              <li class="button"><a href="">Live Version</a></li>
+              <li class="button"><a href="">Github</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="extra-project">
+          <img src="./images/fakebook.png" alt="fakebook">
+          <div class="extra-project-description">
+            <h4>Fakebook</h4>
+            <p>Social media app that with the core features of Facebook. The user can create an account, create a post, comment or like a post, add another user as a friend and edit their personal information. </p>
+            <ul>
+              <li>Ruby</li>
+              <li>RoR</li>
+              <li>PostgreSQL</li>
+              <li>SCSS</li>
+            </ul>
+          </div>
+          <ul class="extra-project-buttons">
+            <li class="button"><a href="">Live</a></li>
+            <li class="button"><a href="">Github</a></li>
+          </ul>
+        </div>
+        <div class="extra-project">
+          <img src="./images/mangatop.png" alt="mangatop">
+          <div class="extra-project-description">
+            <h4>MangaTop</h4>
+            <p>Website for the review of mangas. Users can create an account, like or comment reviews, create their own review, the home page is dynamicaly sorted by the most recent articles and the most voted article at center. </p>
+            <ul>
+              <li>Ruby</li>
+              <li>ERB</li>
+              <li>PostgreSQL</li>
+              <li>SCSS</li>
+            </ul>
+          </div>
+          <ul class="extra-project-buttons">
+            <li class="button"><a href="">Live</a></li>
+            <li class="button"><a href="">Github</a></li>
+          </ul>
+        </div>
+        <div class="extra-project">
+          <img src="./images/weather-app.png" alt="mangatop">
+          <div class="extra-project-description">
+            <h4>Weather APP</h4>
+            <p>Weather app built with JS. The user can search any city with a simple search box powered by Google Place API and the weather details are retrieved with the OpenWeather API. </p>
+            <ul>
+              <li>JavaScript</li>
+              <li>OpenWeather API</li>
+              <li>Google Places API</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <ul class="extra-project-buttons">
+            <li class="button"><a href="">Live</a></li>
+            <li class="button"><a href="">Github</a></li>
+          </ul>
+        </div>
+        <div class="extra-project">
+          <img src="./images/platform-game.png" alt="mangatop">
+          <div class="extra-project-description">
+            <h4>Avoider</h4>
+            <p>HTML 5 video game, built with Phaser 3, jump from one platform to the other while avoiding falling rocks, last as much as possible to add a record. </p>
+            <ul>
+              <li>JavaScript</li>
+              <li>Webpack</li>
+              <li>Phaser</li>
+            </ul>
+          </div>
+          <ul class="extra-project-buttons">
+            <li class="button"><a href="">Live</a></li>
+            <li class="button"><a href="">Github</a></li>
+          </ul>
         </div>
       </div>
-      <div class="menu-header">
-        <button id="menuButton"><i class="fas fa-bars"></i></button>
-      </div>
-      <div class="me-section" id="home">
-        <div class="profile-img-container">
-          <img src="images/face.png" alt="face image">
+    </div>
+    <div class="section-about" id="about">
+      <div class="top">
+        <div class="about-description">
+          <h2>About me</h2>
+          <p>Hello, I’m Josue, Jr. Fullstack Web Developer with React and Ruby On Rails as my main stack. I would love to help you build a product, feature, or website; check out some of my projects and skills. If you think I can help you don’t hesitate to contact me - josue.brigido1@gmail.com</p>
+          <a class="button" href="https://www.kalavhan.com/Resume.pdf" target="_blank">See My Resume</a>
         </div>
+        <img src="./images/sit.png" alt="sit">  
+      </div>
+      <img src="./images/line-white.svg" alt="line">
+      <div class="bottom">
         <ul>
-          <li>
-            <a class="tooltip" href="https://github.com/kalavhan/">
-              <i class="fab fa-github"></i>
-              <span class="tooltiptext">Github</span>
-            </a>
-          </li>
-          <li>
-            <a class="tooltip" href="https://www.linkedin.com/in/kalavhan/">
-              <i class="fab fa-linkedin"></i>
-              <span class="tooltiptext">LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a class="tooltip" href="https://angel.co/u/kalavhan">
-              <i class="fab fa-angellist"></i>
-              <span class="tooltiptext">Angel list</span>
-            </a>
-          </li>
-          <li>
-            <a class="tooltip" href="https://www.kalavhan.com/Resume.pdf" target="_blank">
-              <i class="far fa-file-alt"></i>
-              <span class="tooltiptext">Resume</span>
-            </a>
-          </li>
-          <li>
-            <a class="tooltip" href="mailto:josue.brigido1@gmail.com">
-              <i class="far fa-envelope"></i>
-              <span class="tooltiptext">e-mail</span>
-            </a>
-          </li>
+          <li>Languages & Databases</li>
+          <li>Javascript</li>
+          <li>Ruby</li>
+          <li>MySQL</li>
+          <li>PostgreSQL</li>
+          <li>CSS</li>
+          <li>HTML</li>
         </ul>
-        <h4>Irwing Josué Brigido Espinoza</h4>
-        <h3>Full Stack Web Developer</h3>
-        <p>I’m an innovative and passionate developer, always trying to find solutions to the problems in the most simple yet creative way</p>
+        <ul>
+          <li>Frameworks</li>
+          <li>Ruby On Rails</li>
+          <li>Rspect</li>
+          <li>Capybara</li>
+          <li>Bootstrap</li>
+          <li>Materialize</li>
+        </ul>
+        <ul>
+          <li>Skills & Libraries</li>
+          <li>React</li>
+          <li>Git</li>
+          <li>jQuery</li>
+        </ul>
       </div>
-      <div class="content-section">
-        <div id="projects" class="projects-section">
-          <h1>Projects</h1>
-          <div class="project layer1">
-            <img src="images/cutme.png" alt="project-image">
-            <div class="project-info">
-              <h4>Cut me</h4>
-              <p>
-                A web application designed for barbers. Users can see services, prices, and make an appointment with their favourite barber. 
-              </p>
-              <ul>
-                <li><i class="devicon-react-original-wordmark colored"></i></li>
-                <li> <i class="devicon-rails-plain-wordmark colored"></i></li>
-                <li><i class="devicon-babel-plain colored"></i></li>
-                <li> <i class="devicon-sass-original colored"></i></li>
-                <li> <i class="devicon-postgresql-plain-wordmark colored"></i></li>
-              </ul>
-                <div class="buttons">
-                  <a href="https://github.com/kalavhan/cut-me/" target="_blank">
-                    <button>
-                      <i class="fab fa-github"></i>
-                      Source code
-                    </button>
-                  </a>
-                  <a href="https://cut-me-barbershop.netlify.app/" target="_blank">
-                    <button>
-                      <i class="fas fa-globe"></i>
-                      Live version
-                    </button>
-                  </a>
-                </div>
-            </div>
-          </div>
-          <div class="project layer1">
-            <img src="images/fakebook.png" alt="project-image">
-            <div class="project-info">
-              <h4>Fakebook</h4>
-              <p>
-                Social media app that with the core features of Facebook.
-                  The user can create an account, create a post, comment or like a post,
-                 add another user as a friend and edit their personal information.
-              </p>
-              <ul>
-                <li><i class="devicon-ruby-plain-wordmark colored"></i></li>
-                <li> <i class="devicon-rails-plain-wordmark colored"></i></li>
-                <li><i class="devicon-babel-plain colored"></i></li>
-                <li> <i class="devicon-sass-original colored"></i></li>
-                <li> <i class="devicon-postgresql-plain-wordmark colored"></i></li>
-              </ul>
-                <div class="buttons">
-                  <a href="https://github.com/kalavhan/facebook-clone/" target="_blank">
-                    <button>
-                      <i class="fab fa-github"></i>
-                      Source code
-                    </button>
-                  </a>
-                  <a href="https://frozen-forest-23599.herokuapp.com" target="_blank">
-                    <button>
-                      <i class="fas fa-globe"></i>
-                      Live version
-                    </button>
-                  </a>
-                </div>
-            </div>
-          </div>
-          <div class="project layer1">
-            <img src="images/mangatop.png" alt="project-image">
-            <div class="project-info">
-              <h4>MangaTop</h4>
-              <p>Website for the review of mangas. Users can create an account, like or comment reviews, create their own review, the home page is dynamicaly sorted by the most recent articles and the most voted article at center.
-              </p>
-              <ul>
-                <li><i class="devicon-ruby-plain-wordmark colored"></i></li>
-                <li> <i class="devicon-rails-plain-wordmark colored"></i></li>
-                <li><i class="devicon-babel-plain colored"></i></li>
-                <li> <i class="devicon-sass-original colored"></i></li>
-                <li> <i class="devicon-postgresql-plain-wordmark colored"></i></li>
-              </ul>
-                <div class="buttons">
-                  <a href="https://github.com/kalavhan/manga-top/" target="_blank">
-                    <button>
-                      <i class="fab fa-github"></i>
-                      Source code
-                    </button>
-                  </a>
-                  <a href="https://blooming-crag-23204.herokuapp.com/" target="_blank">
-                    <button>
-                      <i class="fas fa-globe"></i>
-                      Live version
-                    </button>
-                  </a>
-                </div>
-            </div>
-          </div>
-          <div class="project layer1">
-            <img src="images/weather-app.png" alt="project-image">
-            <div class="project-info">
-              <h4>Weather app</h4>
-              <p>Weather app built with JS. The user can search any city with a simple search box powered by Google Place API and the weather details are retrieved with the OpenWeather API.
-              </p>
-              <ul>
-                <li><i class="devicon-javascript-plain colored"></i></li>
-                <li><i class="devicon-webpack-plain colored"></i></li>
-                <li><i class="devicon-babel-plain colored"></i></li>
-                <li><i class="devicon-css3-plain-wordmark colored"></i></li>
-              </ul>
-              <div class="buttons">
-                <a href="https://github.com/kalavhan/facebook-clone/" target="_blank">
-                  <button>
-                    <i class="fab fa-github"></i>
-                    Source code
-                  </button>
-                </a>
-                <a href="https://frozen-forest-23599.herokuapp.com" target="_blank">
-                  <button>
-                    <i class="fas fa-globe"></i>
-                    Live version
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="project layer1">
-            <img src="images/platform-game.png" alt="project-image">
-            <div class="project-info">
-              <h4>Avoider</h4>
-              <p>
-                HTML 5 video game, built with Phaser 3, jump from one platform to the other while avoiding falling rocks, last as much as possible to add a record.
-              </p>
-              <ul>
-                <li><i class="devicon-javascript-plain colored"></i></li>
-                <li><i class="devicon-webpack-plain colored"></i></li>
-                <li><i class="devicon-babel-plain colored"></i></li>
-              </ul>
-              <div class="buttons">
-                <a href="https://github.com/kalavhan/facebook-clone/" target="_blank">
-                  <button>
-                    <i class="fab fa-github"></i>
-                    Source code
-                  </button>
-                </a>
-                <a href="https://frozen-forest-23599.herokuapp.com" target="_blank">
-                  <button>
-                    <i class="fas fa-globe"></i>
-                    Live version
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+    </div>
+    <div class="section-contact">
+        <div class="message">
+          <p>I'm always interested in hearing about new projects, feel free to message me.</p>
         </div>
-        <div id="contactMe" class="contactme-section">
-          <h1>Contact me</h1>
-          <form action="/mailer.php" class="column-flex">
-            <div id="name-container">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Tony Stark" required>  
+        <div class="message-form">
+          <form action="./mailer.php">
+            <div class="form-names">
+              <input type="text" name="firstName" id="firstName" placeholder="First Name">
+              <input type="text" name="lastName" id="lastName" placeholder="Last name">
             </div>
-            <div id="organization-container">
-              <label for="organization">Organization</label>
-              <input type="text" id="organization" name="organization" placeholder="Stark industries (Optional)">  
-            </div>
-            <div id="email-container">
-              <label for="email">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="name@example.com" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">  
-            </div>
-            <div id="subject-container">
-              <label for="subject">Subject</label>
-              <select id="subject" name="subject" required>
-                <option value="" disabled selected hidden aria-invalid="true">World domination</option>
-                <option value="Job offer">Job offer</option>
-                <option value="Collaboration">Collaboration</option>
-                <option value="Miscellaneous">Miscellaneous</option>
-              </select>  
-            </div>
-            <div id="message-container">
-              <label for="message" aria-required="true">Message</label>
-              <textarea id="message" name="message" placeholder=" " style="height:200px" required></textarea>  
-            </div>
-            <input type="submit" value="Send">
+            <input type="text" name="email" id="email" placeholder="Email address">
+            <textarea name="message" id="message" placeholder="Hello!"></textarea>
+            <input type="submit" value="Say Hi!">
           </form>
-        </div> 
+        </div>
+    </div>
+    <div class="footer">
+      <ul>
+        <li>
+          <a class="tooltip" href="https://github.com/kalavhan/">
+            <i class="fab fa-github"></i>
+            <span class="tooltiptext">Github</span>
+          </a>
+        </li>
+        <li>
+          <a class="tooltip" href="https://www.linkedin.com/in/kalavhan/">
+            <i class="fab fa-linkedin"></i>
+            <span class="tooltiptext">LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a class="tooltip" href="https://angel.co/u/kalavhan">
+            <i class="fab fa-angellist"></i>
+            <span class="tooltiptext">Angel list</span>
+          </a>
+        </li>
+        <li>
+          <a class="tooltip" href="https://www.kalavhan.com/Resume.pdf" target="_blank">
+            <i class="far fa-file-alt"></i>
+            <span class="tooltiptext">Resume</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="modalMenu" class="hide">
+      <div>
+        <button class="close"><i class="fas fa-times"></i></button>
       </div>
+      <ul>
+        <li><a class="close" href="#projects">Portfolio</a></li>
+        <li><a class="close" href="#about">About</a></li>
+        <li><a class="close" href="#contact">Contact</a></li>
+      </ul>
     </div>
   </body>
   <script src="js/index.js"></script>

@@ -1,11 +1,14 @@
-document.getElementById('menuButton').addEventListener('click', () => {
-  const modal = document.getElementById('menuModal');
-  modal.classList.remove('modal-inactive');
-  modal.classList.add('modal-active');
+document.getElementById('openMenuBtn').addEventListener('click', ()=>{
+  document.getElementById('modalMenu').classList.remove('hide');
+  document.getElementById('modalMenu').classList.add('modal-menu');
 })
 
-const closeModal = () => {
-  const modal = document.getElementById('menuModal');
-  modal.classList.remove('modal-active');
-  modal.classList.add('modal-inactive');
+var modalButtons = document.getElementsByClassName('close');
+
+for (let i = 0; i < modalButtons.length; i++) {
+  const element = modalButtons[i];
+  element.addEventListener('click', ()=> {
+    document.getElementById('modalMenu').classList.remove('modal-menu');
+    document.getElementById('modalMenu').classList.add('hide');
+  }) 
 }

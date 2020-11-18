@@ -9,14 +9,34 @@
 </form>
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // collect value of input field
-    $name = $_POST['fname'][0];
-    if (empty($name)) {
-        echo "Name is empty";
-    } else {
-        echo file_get_contents("php://input").;
-    }
+/*
+From http://www.html-form-guide.com 
+This is the simplest emailer one can have in PHP.
+If this does not work, then the PHP email configuration is bad!
+*/
+$msg="";
+if(isset($_POST['submit'])) {
+    $from_add = "josue.brigido@mail.com"; 
+
+	$to_add = "josue.brigido@kalavhan.com"; //<-- put your yahoo/gmail email address here
+
+	$subject = "Test Subject";
+	$message = "Test Message";
+	
+	$headers = "From: $from_add \r\n";
+	$headers .= "Reply-To: $from_add \r\n";
+	$headers .= "Return-Path: $from_add\r\n";
+	$headers .= "X-Mailer: PHP \r\n";
+	
+	
+	if(mail($to_add,$subject,$message,$headers)) 
+	{
+		$msg = "Mail sent OK";
+	} 
+	else 
+	{
+ 	   $msg = "Error sending email!";
+	}
 }
 ?>
 
