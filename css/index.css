@@ -350,6 +350,7 @@ body {
   width: 80%;
   padding: 0 10% 0 10%;
   background-color: #1c1a19;
+  overflow: hidden;
 }
 
 .section-about > .top {
@@ -407,10 +408,7 @@ body {
   background-color: #fbfbfb;
   display: flex;
   padding: 10%;
-}
-
-.section-contact > .message {
-  width: 50%;
+  align-items: center;
 }
 
 .section-contact > .message > p {
@@ -434,10 +432,10 @@ body {
 .section-contact > .message-form > form > .form-names > input {
   border: none;
   border-bottom: 1px solid #aaa9a8;
-  width: 48%;
   font-size: 18px;
   padding: 2px;
   margin-bottom: 20px;
+  background-color: #fbfbfb;
 }
 
 .section-contact > .message-form > form > input:nth-of-type(1) {
@@ -447,6 +445,7 @@ body {
   font-size: 18px;
   padding: 2px;
   margin-bottom: 20px;
+  background-color: #fbfbfb;
 }
 
 .section-contact > .message-form > form > textarea {
@@ -457,6 +456,7 @@ body {
   font-size: 18px;
   padding: 2px;
   margin-bottom: 20px;
+  background-color: #fbfbfb;
 }
 
 .section-contact > .message-form > form > input:nth-of-type(2) {
@@ -652,6 +652,28 @@ body {
     bottom: -80px;
     right: -200px;
   }
+
+  .section-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-contact > .message {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .section-contact > .message > p {
+    text-align: center;
+  }
+
+  .section-contact > .message-form {
+    width: 100%;
+  }
+
+  .section-contact > .message-form > form > .form-names {
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 788px) {
   .section-home-greeting {
@@ -747,7 +769,14 @@ body {
   .section-about > .bottom {
     justify-content: space-between;
   }
+
+  .section-contact > .message {
+    width: 50%;
+  }
   
+  .section-contact > .message-form > form > .form-names > input {
+    width: 48%;
+  }
   /* .section-home-greeting {
     top: 30%;
     left: 15%;
