@@ -579,8 +579,9 @@ body {
   .section-home-greeting > h1, h2 {
     color: #F55800;
     font-family: 'Crete Round', serif;
-    font-size: 49px;
-    line-height: 58.5px;
+    font-size: 44px;
+    line-height: 54.5px;
+    width: 100%;
   }
 
   .section-home-greeting > h3 {
