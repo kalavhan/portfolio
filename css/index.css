@@ -659,6 +659,11 @@ body {
     right: -200px;
   }
 
+
+  .section-about > .bottom > ul > li {
+    text-align: center;
+  }
+
   .section-contact {
     flex-direction: column;
     align-items: center;
@@ -775,10 +780,6 @@ body {
 
   .section-about > .bottom {
     justify-content: space-between;
-  }
-
-  .section-about > .bottom > ul > li {
-    text-align: center;
   }
 
   .section-contact > .message {
