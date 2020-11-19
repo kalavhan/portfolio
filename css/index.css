@@ -530,6 +530,7 @@ body {
 @media screen and (max-width: 787px) {
   .section-home {
     flex-direction: column;
+    justify-content: center;
   }
 
   .section-home-greeting {
@@ -541,8 +542,8 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    width: 80%;
-    min-width: 375px;
+    width: 90%;
+    min-width: 315px;
   }
 
   .section-home > ul > li > a {
@@ -554,9 +555,10 @@ body {
   }
 
   .section-home-greeting {
-    width: 80%;
-    min-width: 375px;
+    width: 90%;
+    min-width: 315px;
     z-index: 2;
+    padding: 0 15px 0 15px;
   }
 
   .section-home-image {
@@ -773,6 +775,10 @@ body {
 
   .section-about > .bottom {
     justify-content: space-between;
+  }
+
+  .section-about > .bottom > ul > li {
+    text-align: center;
   }
 
   .section-contact > .message {
