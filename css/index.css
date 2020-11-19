@@ -25,10 +25,11 @@ body {
 
 .navbar > a {
   text-decoration: none;
+  color: #fbfbfb;
 }
 
 .navbar > a:visited {
-  color: inherit;
+  color: #fbfbfb;
 }
 
 .navbar > ul {
@@ -62,6 +63,7 @@ body {
   align-items: center;
   overflow: hidden;
   padding-left: 5%;
+  padding-top: 64px;
 }
 
 .section-home-greeting {
@@ -125,10 +127,10 @@ body {
 }
 
 .modal-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #3C3A39;
   z-index: 10;
   color: #FFF5E1;
@@ -137,6 +139,7 @@ body {
   align-items: center;
   font-size: 32px;
   font-weight: bold;
+  padding-top: 40px;
 }
 
 .modal-menu > div {
@@ -175,7 +178,7 @@ body {
 .section-projects {
   display: flex;
   flex-direction: column;
-  padding: 8% 10% 8% 10%;
+  padding: 64px 10% 8% 10%;
   background-color: #fbfbfb;
   background-clip: border-box;
   width: 80%;
@@ -527,6 +530,7 @@ body {
 @media screen and (max-width: 787px) {
   .section-home {
     flex-direction: column;
+    justify-content: center;
   }
 
   .section-home-greeting {
@@ -538,8 +542,8 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    width: 80%;
-    min-width: 375px;
+    width: 90%;
+    min-width: 315px;
   }
 
   .section-home > ul > li > a {
@@ -551,9 +555,10 @@ body {
   }
 
   .section-home-greeting {
-    width: 80%;
-    min-width: 375px;
+    width: 90%;
+    min-width: 315px;
     z-index: 2;
+    padding: 0 15px 0 15px;
   }
 
   .section-home-image {
@@ -578,8 +583,9 @@ body {
   .section-home-greeting > h1, h2 {
     color: #F55800;
     font-family: 'Crete Round', serif;
-    font-size: 49px;
-    line-height: 58.5px;
+    font-size: 44px;
+    line-height: 54.5px;
+    width: 100%;
   }
 
   .section-home-greeting > h3 {
@@ -653,6 +659,11 @@ body {
     right: -200px;
   }
 
+
+  .section-about > .bottom > ul > li {
+    text-align: center;
+  }
+
   .section-contact {
     flex-direction: column;
     align-items: center;
@@ -701,8 +712,8 @@ body {
   }
 
   .section-home-greeting > h1, h2 {
-    font-size: 52px;
-    line-height: 61.5px;
+    font-size: 48px;
+    line-height: 57.5px;
   }
   
   .section-home-greeting > h3 {
@@ -711,8 +722,9 @@ body {
   }
   
   .section-home-greeting > p {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 32px;
+    width: 100%;
   }
 
   .section-projects-title {
