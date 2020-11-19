@@ -25,10 +25,11 @@ body {
 
 .navbar > a {
   text-decoration: none;
+  color: #fbfbfb;
 }
 
 .navbar > a:visited {
-  color: inherit;
+  color: #fbfbfb;
 }
 
 .navbar > ul {
@@ -701,8 +702,8 @@ body {
   }
 
   .section-home-greeting > h1, h2 {
-    font-size: 52px;
-    line-height: 61.5px;
+    font-size: 48px;
+    line-height: 57.5px;
   }
   
   .section-home-greeting > h3 {
@@ -711,8 +712,9 @@ body {
   }
   
   .section-home-greeting > p {
-    font-size: 20px;
+    font-size: 19px;
     line-height: 32px;
+    width: 100%;
   }
 
   .section-projects-title {
